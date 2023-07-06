@@ -1,0 +1,95 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper div {
+  max-width: 33vw;
+}
+
+.textblock {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5vh;
+}
+
+.textblock div {
+  padding: 1.5vw;
+}
+
+.textblock button {
+  background-color: rgba(var(--main-background-rgb), 1);
+  color: rgba(var(--header-text-rgb), 1);
+  border: none;
+  padding: 1vh 2vw;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.caption {
+  display: flex;
+  text-align: justify;
+  width: inherit;
+
+}
+
+.caption h3 {
+  font-size: 2.3vw;
+  font-weight: lighter;
+
+}
+
+.description {
+  font-size: 1.7vw;
+  color: rgba(var(--body-text-rgb), .8);
+  font-family: var(--font-body);
+}
+
+.description,
+.mainText {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.mainText {
+  font-size: 1.4vw;
+}
+
+@media (max-width: 767px) {
+
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 3vh; */
+  }
+
+  .wrapper div {
+    max-width: none;
+    padding: 3vh 1.5vw 0vh 1.5vw;
+
+  }
+
+  .textblock div {
+    font-size: 4vw;
+  }
+
+  .caption {
+    justify-content: center;
+  }
+
+  .caption div {
+    display: flex;
+    align-items: center;
+  }
+
+  .caption h3 {
+    font-size: 6vw;
+  }
+
+  .button :any-link {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding-bottom: 8vh;
+  }
+}

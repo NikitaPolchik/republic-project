@@ -1,0 +1,14 @@
+:root {
+  --header-text-rgb: 255, 253, 223;
+  --main-background-rgb: 0, 111, 83;
+  --body-text-rgb: 94, 21, 18;
+  --font-header: 'Playfair Display', serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

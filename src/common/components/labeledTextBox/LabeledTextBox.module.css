@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  bottom: 30vh;
+  height: 50vh;
+}
+
+.label {
+  position: absolute;
+  margin: -4.5vh 5vw;
+  padding: 1vh 2vw;
+  background-color: rgba(var(--main-background-rgb), 1);
+  color: rgba(var(--header-text-rgb), 1);
+
+}
+
+.textblock {
+  min-height: 50vh;
+  background-color: white;
+  padding: 10vh 5vw;
+
+}
+
+@media (max-width: 767px) {
+  .container {
+    bottom: 0vh;
+    height: auto;
+  }
+
+  .label {
+    margin: 0;
+    padding: 0;
+  }
+}

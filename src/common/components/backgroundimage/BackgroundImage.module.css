@@ -1,0 +1,10 @@
+.backgroundImage {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  transform: scale(1.61);
+  width: 100%;
+  height: unset;
+}

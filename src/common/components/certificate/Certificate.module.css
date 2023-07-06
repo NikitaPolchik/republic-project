@@ -1,0 +1,54 @@
+.wrapper {
+  display: flex;
+}
+
+.wrapper img {
+  margin: 2vw;
+  width: 20vw;
+  height: 20vw;
+}
+
+
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  justify-content: center;
+  padding-left: 1vw;
+  padding-top: 2vw;
+}
+
+.text h1 {
+  padding-bottom: 1vh;
+  font-weight: 100;
+  font-size: 2.4vw;
+}
+
+.text h2 {
+  font-family: var(--font-body);
+  font-weight: 100;
+  color: rgba(var(--body-text-rgb), .5);
+  font-size: 4vw;
+}
+
+.certificatesWrapper {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+
+  .certificatesWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .certificatesWrapper img {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .text {
+    max-width: 30vw;
+  }
+}
