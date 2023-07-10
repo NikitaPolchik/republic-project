@@ -18,11 +18,9 @@ export default function RepublicHeader() {
           <Link href="./contacts">CONTACTS</Link>
         </div>
       </div>
-      <div className={styles.image}>
-        <Link href="/">
-          <img src="https://xn--80ablcnmbe5adjn1av.xn--p1ai/wp-content/uploads/2015/03/roc1999slogan2.png" alt="Republic of coffe.img" />
-        </Link>
-      </div>
+      <Link className={styles.imageLink} href="/">
+        <img className={styles.image} src="https://xn--80ablcnmbe5adjn1av.xn--p1ai/wp-content/uploads/2015/03/roc1999slogan2.png" alt="Republic of coffe.img" />
+      </Link>
       <DropDownMenu />
     </div>
 

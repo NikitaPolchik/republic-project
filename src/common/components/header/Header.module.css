@@ -11,7 +11,7 @@
 }
 
 .header img {
-  padding: 0vh 2vw;
+  margin: .5vh 2vw;
   max-width: 50vw;
 }
 
@@ -41,10 +41,14 @@
   padding-left: 2vw;
 }
 
+.imageLink :hover {
+  transform: translate(-.7vh, -.7vh);
+  transition: all .3s ease;
+}
 
-
-
-
+.image {
+  transition: all .3s ease;
+}
 
 @media (max-width: 767px) {
 
@@ -63,5 +67,9 @@
     display: none;
   }
 
+  .imageLink :hover {
+    transform: translate(0)
+  }
 
+  ;
 }

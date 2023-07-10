@@ -1,18 +1,16 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons"
-import styles from "../dropDownMenu/DropDownMenu.module.css"
+import styles from "./DropDownMenu.module.css"
 import Link from "next/link"
 import { useState } from "react"
 
 
 export default function DropDownMenu() {
-
   const [dropDownVisible, setDropDownVisible] = useState(false)
   const handleClick = () => {
     setDropDownVisible(!dropDownVisible)
+    console.log("clicked");
   }
-
-
 
   return (
     <>
@@ -25,14 +23,42 @@ export default function DropDownMenu() {
             <FontAwesomeIcon icon={faCaretDown} />
           </div>
         </div>
-        <div className={styles.dropDownMenu} style={{ display: dropDownVisible ? "flex" : "none" }}>
-          <Link href="./about">ABOUT</Link>
-          <Link href="./supplycoffee">COFFEE</Link>
-          <Link href="./supplytea">TEA</Link>
-          <Link href="./coffeemachines">COFFEEMACHINES</Link>
-          <Link href="./accessories">ACESSORIES</Link>
-          <Link href="./career">CAREER</Link>
-          <Link href="./contacts">CONTACTS</Link>
+        <div className={styles.dropDownMenu}>
+          <Link href="./about" style={{
+            color: dropDownVisible ? "rgb(var(--header-text-rgb)" : "",
+            height: dropDownVisible ? "5vh" : "0vh",
+            padding: dropDownVisible ? "0vh" : "0vh"
+          }}>ABOUT</Link>
+          <Link href="./supplycoffee" style={{
+            color: dropDownVisible ? "rgb(var(--header-text-rgb)" : "",
+            height: dropDownVisible ? "5vh" : "0vh",
+            padding: dropDownVisible ? "0vh" : "0vh"
+          }}>COFFEE</Link>
+          <Link href="./supplytea" style={{
+            color: dropDownVisible ? "rgb(var(--header-text-rgb)" : "",
+            height: dropDownVisible ? "5vh" : "0vh",
+            padding: dropDownVisible ? "0vh" : "0vh"
+          }}>TEA</Link>
+          <Link href="./coffeemachines" style={{
+            color: dropDownVisible ? "rgb(var(--header-text-rgb)" : "",
+            height: dropDownVisible ? "5vh" : "0vh",
+            padding: dropDownVisible ? "0vh" : "0vh"
+          }}>COFFEEMACHINES</Link>
+          <Link href="./accessories" style={{
+            color: dropDownVisible ? "rgb(var(--header-text-rgb)" : "",
+            height: dropDownVisible ? "5vh" : "0vh",
+            padding: dropDownVisible ? "0vh" : "0vh"
+          }}>ACESSORIES</Link>
+          <Link href="./career" style={{
+            color: dropDownVisible ? "rgb(var(--header-text-rgb)" : "",
+            height: dropDownVisible ? "5vh" : "0vh",
+            padding: dropDownVisible ? "0vh" : "0vh"
+          }}>CAREER</Link>
+          <Link href="./contacts" style={{
+            color: dropDownVisible ? "rgb(var(--header-text-rgb)" : "",
+            height: dropDownVisible ? "5vh" : "0vh",
+            padding: dropDownVisible ? "0vh" : "0vh"
+          }}>CONTACTS</Link>
         </div>
       </div>
     </>
