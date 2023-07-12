@@ -27,37 +27,44 @@ export default function DropDownMenu() {
           <Link href="./about" style={{
             color: dropDownVisible ? "rgb(var(--header-text-rgb)" : "",
             height: dropDownVisible ? "5vh" : "0vh",
-            padding: dropDownVisible ? "0vh" : "0vh"
+            padding: dropDownVisible ? "0vh" : "0vh",
+            zIndex: dropDownVisible ? "1" : "-1"
           }}>ABOUT</Link>
           <Link href="./supplycoffee" style={{
             color: dropDownVisible ? "rgb(var(--header-text-rgb)" : "",
             height: dropDownVisible ? "5vh" : "0vh",
-            padding: dropDownVisible ? "0vh" : "0vh"
+            padding: dropDownVisible ? "0vh" : "0vh",
+            zIndex: dropDownVisible ? "1" : "-1"
           }}>COFFEE</Link>
           <Link href="./supplytea" style={{
             color: dropDownVisible ? "rgb(var(--header-text-rgb)" : "",
             height: dropDownVisible ? "5vh" : "0vh",
-            padding: dropDownVisible ? "0vh" : "0vh"
+            padding: dropDownVisible ? "0vh" : "0vh",
+            zIndex: dropDownVisible ? "1" : "-1"
           }}>TEA</Link>
           <Link href="./coffeemachines" style={{
             color: dropDownVisible ? "rgb(var(--header-text-rgb)" : "",
             height: dropDownVisible ? "5vh" : "0vh",
-            padding: dropDownVisible ? "0vh" : "0vh"
+            padding: dropDownVisible ? "0vh" : "0vh",
+            zIndex: dropDownVisible ? "1" : "-1"
           }}>COFFEEMACHINES</Link>
           <Link href="./accessories" style={{
             color: dropDownVisible ? "rgb(var(--header-text-rgb)" : "",
             height: dropDownVisible ? "5vh" : "0vh",
-            padding: dropDownVisible ? "0vh" : "0vh"
+            padding: dropDownVisible ? "0vh" : "0vh",
+            zIndex: dropDownVisible ? "1" : "-1"
           }}>ACESSORIES</Link>
           <Link href="./career" style={{
             color: dropDownVisible ? "rgb(var(--header-text-rgb)" : "",
             height: dropDownVisible ? "5vh" : "0vh",
-            padding: dropDownVisible ? "0vh" : "0vh"
+            padding: dropDownVisible ? "0vh" : "0vh",
+            zIndex: dropDownVisible ? "1" : "-1"
           }}>CAREER</Link>
           <Link href="./contacts" style={{
             color: dropDownVisible ? "rgb(var(--header-text-rgb)" : "",
             height: dropDownVisible ? "5vh" : "0vh",
-            padding: dropDownVisible ? "0vh" : "0vh"
+            padding: dropDownVisible ? "0vh" : "0vh",
+            zIndex: dropDownVisible ? "1" : "-1"
           }}>CONTACTS</Link>
         </div>
       </div>
